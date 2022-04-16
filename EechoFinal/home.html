@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Eecho Yuan</title>
+        <link href="mystyle.css" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@700;800;900&family=Manrope:wght@400;700;800&family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<style>
+#decotitletxt{
+    font-family: 'Noto Sans TC', sans-serif; font-size: 200px; margin: 5px; margin-top: 75px;
+    
+    transition-property: all;
+    transition-duration: 1s;
+
+    position: relative;
+    animation-name: decotext;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+    @keyframes decotext{
+        0%   {color: rgb(2, 2, 68);}
+        9% {color: rgb(32, 32, 32);}
+        10%  {color: rgb(238, 238, 238)}
+        11% {color: rgb(32, 32, 32);}
+        29% {color: rgb(32, 32, 32);}
+        30%  {color: rgb(238, 238, 238);left:5px}
+        31% {color: rgb(32, 32, 32);}
+        39% {color: rgb(32, 32, 32); left: 0px;}
+        40%  {color: rgb(238, 238, 238)}
+        41% {color: rgb(32, 32, 32);}
+        59% {color: rgb(32, 32, 32);}
+        60%  {color: rgb(238, 238, 238)}
+        61% {color: rgb(251, 255, 0);bottom:5px;}
+        62%  {color: rgb(238, 238, 238)}
+        63% {color: rgb(31, 31, 31);}
+        79% {color: rgb(32, 32, 32);}
+        80%  {color: rgb(238, 238, 238)}
+        81% {color: rgb(32, 32, 32);}
+        100% {color: rgb(28, 36, 28);}
+    }
+#titletxt{
+    margin: 15px; padding-top: 10px;
+
+    transition-property: all;
+    transition-duration: 1s;
+
+    animation-name: decotext;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+h3{
+    margin-top: 20px;
+    margin-bottom: 2px;
+    font-size: 35px;
+    font-weight: 700;
+}
+h4{
+    width: 70%;
+}
+header{
+    border-bottom: solid;
+}
+.section_header{
+  border-bottom: solid;
+}
+.section_header p{
+    margin: 0px;
+    margin-left: 15px;
+}
+.carousel_slide{
+    margin: 15px;
+}
+@media all and (max-width:900px){
+    #decotitletxt{
+        font-size: 150px;
+    }
+    h4{
+    width: 80%;
+    }
+}
+@media all and (max-width:660px){
+    #decotitletxt, footer{
+        display: none;
+    }
+    h4{
+    width: 90%;
+    margin: 15px;
+    font-size: 18px;
+    }
+    .nav1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    }
+}
+</style>
+<body>
+
+    <nav>
+        <ul class="nav1">
+            <li><a href="home.html">home</a></li>
+            <li><a href="gallery.html">works</a></li>
+            <li><a href="index.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+
+<header>
+    <h1 id="decotitletxt">顯示故障</h1>
+    <h1 id="titletxt">[error detected]<br>a portfolio in construction</h1>
+    <h3>hi! i'm eecho,</h3>
+    <h4>Welcome to my digital portfolio (still in construction)! I'm  a highschool student from San Diego & Beijing. I'm also a (beginnger and still learning) artist and designer (and a mango-coconut-aloe enthusiast!). My goal is to combine traditional visual arts with digital medias with some added personalities.</h4>
+</header>
+
+<main>
+    <div class="section_header">
+       <p>#notfound</p>
+    </div>
+    <div id="carousel" class="carousel_slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="2">
+            <img src="assets/home/art.png" class="d-block w-100" alt="art">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>圖片故障</h5>
+              <p>#artworks not found</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-interval="2">
+            <img src="assets/home/design.png" class="d-block w-100" alt="design">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>設計故障</h5>
+              <p>#designworks not found</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/home/sketch.png" class="d-block w-100" alt="sketch">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>草圖故障</h5>
+              <p>#sketch not found</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</main>
+
+<footer>
+    <p>© Eecho Yuan 2022</p>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
